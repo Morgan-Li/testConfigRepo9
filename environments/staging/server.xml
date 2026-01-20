@@ -1,0 +1,28 @@
+<server description="Sample Liberty server">
+
+    <featureManager>
+        <platform>jakartaee-9.1</platform>
+        <feature>jsp-2.3</feature>
+        <feature>servlet-4.0</feature>
+    </featureManager>
+
+    <variable name="http.port" defaultValue="9080" />
+    <variable name="https.port" defaultValue="9443" />
+
+    <!-- tag::server[] -->
+    <httpEndpoint host="*" httpPort="${http.port}"
+        httpsPort="${https.port}" id="defaultHttpEndpoint" />
+
+    <!-- mtest config -->
+  
+    <!-- tag::EARdefinition[] -->
+    <enterpriseApplication id="guide-maven-multimodules-ear"
+        location="guide-maven-multimodules-ear.ear"
+        name="guide-maven-multimodules-ear">
+    
+        <webApplication location="converter.war" context-root="/converter" />
+    </enterpriseApplication>
+    <!-- end::EARdefinition[] -->
+    <!-- end::server[] -->
+
+</server>
