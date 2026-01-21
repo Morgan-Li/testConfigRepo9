@@ -6,7 +6,7 @@ app:
   # Set the build version ID to deploy for the "Build, deploy, and run" 
   # scenario. If the value is set to an empty string ("") the application
   # is not deployed.
-  version: "3c05aae1-3a87-43a3-8d9b-9277921a7b4f"
+  version: "b482ad4c-36d3-4a71-8c3a-d1ada95287af"
   libertyVersionPolicy: "25.0.0.6"
   libertyInterimFixes:
     - "PH66915"
