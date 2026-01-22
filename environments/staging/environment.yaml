@@ -10,6 +10,7 @@ app:
   libertyVersionPolicy: "25.0.0.6"
   libertyInterimFixes:
     - "PH66915"
+    
   # Set the Maven coordinates of the Maven artifact to deploy for the 
   # "Deploy, and run" scenario.
   #maven:
